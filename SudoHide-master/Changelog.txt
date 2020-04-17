@@ -1,0 +1,70 @@
+Experimental:
+
+Beta:
+
+Stable:
+1.28.2 by Mikanoshi
+- Fixed icons in lists for some apps
+- Fixed light/dark UI colors
+
+1.28.1 by Mikanoshi
+- Code refactored to be more safe and stable to prevent bootloops
+- Support library removed resulting in 96% APK size reduction :)
+  Min supported Android version is now 5.0+
+- All module settings are only applied on boot to minimize the performance impact
+- Faster app list loading
+- Fixed missing translations, added Russian
+- Cool new icon :)
+
+1.28
+-Android Nougat Support
+-Bug Fixes
+-Code Refactoring
+
+1.26
+-Fixed bug in filtered selection in secondary screen
+-Added SK translation (thanks to Pyler)
+
+1.24
+- Fixed "Restart launcher" not working.
+- Added "Show Package Name" option
+-"Show System Apps" Now  displays system apps in both main and config views
+-bug fixes and UI code enhancements
+
+1.22
+-Re-added fast scroll on main menu
+-Added progress on spinning bar (count and percentage)
+-Code refactoring
+
+1.20
+Fixes:
+-Fixed Show System apps returning a blank list
+-Fixed the color markings not changing when config changes
+
+Added:
+- Async task to handle app load
+-Loading Dialog in so the app does not seem frozen
+
+1.16
+-UI Changes added red accentuation (tell me what you think)
+-Added Xposed check to see if module is enabled.
+-code refactoring
+
+1.14
+-Added: application name color is red if app is hidden from any other app.
+-Code Refactoring
+
+
+1.12
+-Fixed Keyboard auto pop up after pressing on a list item to select from which apps  the previously selected app should hide
+-Added toast message to confirm check-box selection deselection
+-Added toast message to confirm apply changes
+-code refactoring
+
+1.10
+-Fixed Issues causing boot loops (The Horror)
+---Null pointer exception  (BOOM!)
+---Class cast exception
+--Repeated Hooks
+-Code refactoring
+-Kept Kitkat support from previous beta version (1.02b)

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SudoHide</string>
+    <string name="action_restart_launcher">Перезапустить ланчер</string>
+    <string name="action_show_system_apps">Cистемные приложения</string>
+    <string name="title_hide_app">Скрывается от</string>
+    <string name="msg_hide_from_system_apps">Скрывать от системых приложений</string>
+    <string name="apply">Сохранить</string>
+    <string name="search_apps">Поиск приложений…</string>
+    <string name="sudoHide_module_not_active">Xposed framework недоступен!\nПроверьте, что Xposed установлен корректно и модуль активирован.</string>
+    <string name="loading_apps">Загрузка списка приложений…\n</string>
+    <string name="action_show_package_name">Названия пакетов</string>
+	<string name="applied">Изменения сохранены, перезагрузитесь для применения</string>
+	<string name="exit_app">Выйти</string>
+</resources>

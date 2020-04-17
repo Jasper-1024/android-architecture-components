@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XPrivacyLua.iml" filepath="$PROJECT_DIR$/XPrivacyLua.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b.iml" filepath="$PROJECT_DIR$/XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b.iml" group="XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b" />
+      <module fileurl="file://$PROJECT_DIR$/app/XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b-app.iml" filepath="$PROJECT_DIR$/app/XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b-app.iml" group="XPrivacyLua-08738dfe182c8265a5fbc07f058a48e6cb7f484b/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

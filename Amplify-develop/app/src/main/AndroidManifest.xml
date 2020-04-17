@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryansteckler.nlpunbounce"
+    android:installLocation="internalOnly" >
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/UnbounceThemeDark" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="42" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Control battery killing alarms, wakelocks and services" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Amplify settings" >
+        </activity>
+
+        <receiver
+            android:name=".ActivityReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ryansteckler.nlpunbounce.STATS_REFRESHED_ACTION" />
+                <action android:name="com.ryansteckler.nlpunbounce.CREATE_FILES_ACTION" />
+                <action android:name="com.ryansteckler.nlpunbounce.RESET_FILES_ACTION" />
+                <action android:name="com.ryansteckler.nlpunbounce.PUSH_NETWORK_STATS" />
+
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MaterialSettingsActivity"
+            android:label="@string/title_activity_material_settings" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".Settings-Alias"
+            android:enabled="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:targetActivity=".MaterialSettingsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".tasker.TaskerActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+
+            <!-- this Intent filter allows the plug-in to be discovered -->
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".tasker.TaskerReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <!--android:process=":background"-->
+
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".SELinuxService"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

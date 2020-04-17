@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<style name="LightTheme" parent="@android:style/Theme.Material.Light">
+		<item name="android:statusBarColor">?android:attr/colorPrimary</item>
+		<item name="android:colorPrimaryDark">?android:attr/colorPrimary</item>
+		<item name="android:windowLightStatusBar">true</item>
+	</style>
+
+	<style name="DarkTheme" parent="@android:style/Theme.Material">
+		<item name="android:statusBarColor">?android:attr/colorPrimary</item>
+		<item name="android:colorPrimaryDark">?android:attr/colorPrimary</item>
+		<item name="android:windowLightStatusBar">false</item>
+	</style>
+</resources>

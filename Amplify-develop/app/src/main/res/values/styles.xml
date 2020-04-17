@@ -1,0 +1,212 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="UnbounceThemeLight" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/UnbounceActionBar</item>
+        <item name="activityRootBackground">#dddddd</item>
+        <item name="cardBackground">@drawable/card_background_light</item>
+        <item name="cardText">@style/TextBody1</item>
+        <item name="cardTextValues">@style/TextBody1Fade</item>
+        <item name="background_primary">#009688</item>
+        <item name="background_primary_shaded">#00796b</item>
+
+        <item name="background_secondary">#FF9800</item>
+        <item name="background_secondary_faded">#ffb74d</item>
+        <item name="background_secondary_shaded">#ef6c00</item>
+
+        <item name="background_gray">#9E9E9E</item>
+        <item name="background_lists">#ffffff</item>
+        <item name="background_drawer">#cc666666</item>
+
+        <item name="background_three">#FF5722</item>
+        <item name="background_three_shaded">#a83916</item>
+        <item name="background_three_faded">#ff9762</item>
+
+        <item name="background_four">#9c27b0</item>
+        <item name="background_four_faded">#ba68c8</item>
+        <item name="background_four_shaded">#7b1fa2</item>
+
+        <item name="background_panel_disabled">@android:color/darker_gray</item>
+        <item name="background_panel_enabled">@android:color/white</item>
+        <item name="reset_button_background">@drawable/flat_button_background</item>
+        <item name="taskerHeader">@drawable/header_background</item>
+        <item name="taskerHeaderText">@style/TextTitle</item>
+        <item name="textCaption">@style/TextCaption</item>
+        <item name="categoryText">@style/TextTitle</item>
+        <item name="listItemDownWakelock">@drawable/list_item_down_wakelock</item>
+        <item name="listItemDownAlarm">@drawable/list_item_down_alarm</item>
+        <item name="listItemDownService">@drawable/list_item_down_service</item>
+        <item name="listBackgroundWakelock">@drawable/list_background_wakelock</item>
+        <item name="listBackgroundAlarm">@drawable/list_background_alarm</item>
+        <item name="listBackgroundService">@drawable/list_background_service</item>
+
+    </style>
+
+    <style name="UnbounceThemeDark" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/UnbounceActionBar</item>
+        <item name="activityRootBackground">#000000</item>
+        <item name="cardBackground">@drawable/card_background_dark</item>
+        <item name="cardText">@style/TextBody1_dark</item>
+        <item name="cardTextValues">@style/TextBody1Fade_dark</item>
+        <item name="background_primary">#009688</item>
+        <item name="background_primary_shaded">#333333</item>
+
+        <item name="background_secondary">#FF9800</item>
+        <item name="background_secondary_faded">#ffb74d</item>
+        <item name="background_secondary_shaded">#333333</item>
+
+        <item name="background_gray">#9E9E9E</item>
+        <item name="background_lists">#000000</item>
+        <item name="background_drawer">#cc000000</item>
+
+        <item name="background_three">#FF5722</item>
+        <item name="background_three_shaded">#333333</item>
+        <item name="background_three_faded">#ff9762</item>
+
+        <item name="background_four">#9c27b0</item>
+        <item name="background_four_faded">#ba68c8</item>
+        <item name="background_four_shaded">#333333</item>
+
+        <item name="background_panel_enabled">@android:color/black</item>
+        <item name="background_panel_disabled">@android:color/darker_gray</item>
+        <item name="reset_button_background">@drawable/flat_button_background_dark</item>
+        <item name="taskerHeader">@drawable/header_background_dark</item>
+        <item name="taskerHeaderText">@style/TextTitle_dark</item>
+        <item name="textCaption">@style/TextCaption_dark</item>
+        <item name="categoryText">@style/TextTitle_dark</item>
+        <item name="listItemDownWakelock">@drawable/list_item_down_dark</item>
+        <item name="listItemDownAlarm">@drawable/list_item_down_dark</item>
+        <item name="listItemDownService">@drawable/list_item_down_dark</item>
+        <item name="listBackgroundWakelock">@drawable/list_background_dark</item>
+        <item name="listBackgroundAlarm">@drawable/list_background_dark</item>
+        <item name="listBackgroundService">@drawable/list_background_dark</item>
+
+    </style>
+
+
+
+    <!-- general styles for the action bar -->
+    <style name="UnbounceActionBar" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/background_primary</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider_dark">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="TextBody1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextBody1_dark">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextBody1Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextBody1Fade">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+
+    <style name="TextBody1Fade_dark">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+
+    <style name="TextBody2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.87</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBody2Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCaption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+
+    <style name="TextCaption_dark">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+
+    <style name="TextCaptionLight">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.54</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextTitleLight">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextTitle_dark">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextButtonLight">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+</resources>
